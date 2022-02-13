@@ -35,7 +35,7 @@ public class CopyrightController {
 
     @GetMapping("/period")
     public List<CopyrightDto> getAllForPeriod(@RequestParam(defaultValue = "") String from,
-                                           @RequestParam(defaultValue = "") String to) {
+                                              @RequestParam(defaultValue = "") String to) {
         return service.getAllForPeriod(from, to);
     }
 

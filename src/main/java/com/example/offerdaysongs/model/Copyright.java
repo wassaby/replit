@@ -20,7 +20,7 @@ public class Copyright {
     private LocalDate expirationDate;
     private Double amount;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "company_id", foreignKey = @ForeignKey(name = "copyright_company_id_fk"))
     private Company company;
 

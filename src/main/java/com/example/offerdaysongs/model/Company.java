@@ -13,7 +13,7 @@ public class Company {
     long id;
     String name;
 
-    @OneToMany(mappedBy = "id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "company", fetch = FetchType.LAZY)
     private List<Copyright> copyrights;
 
 }
